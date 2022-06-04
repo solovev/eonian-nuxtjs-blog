@@ -40,10 +40,29 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    '@nuxtjs/i18n',
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
+
+  i18n: {
+    locales: ['en', 'ru'],
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en',
+      messages: {
+        en: {
+          'read-more': 'Read more',
+          welcome: 'Welcome to your Nuxt Application',
+        },
+        ru: {
+          'read-more': 'Читать далее',
+          welcome: 'Добро пожаловать в ваше приложение Nuxt',
+        },
+      },
+    },
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
