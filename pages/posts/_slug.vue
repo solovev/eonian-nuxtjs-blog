@@ -1,8 +1,6 @@
 <template>
   <ThemeLayout>
-    <h1>{{ page.title }}</h1>
-    <p>{{ page.description }}</p>
-    <nuxt-content :document="page" />
+    <nuxt-content class="prose prose-sm sm:prose mx-auto" :document="page" />
   </ThemeLayout>
 </template>
 
